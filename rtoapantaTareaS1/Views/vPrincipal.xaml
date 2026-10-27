@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoapantaTareaS1.Views.vPrincipal"
+             Title="vPrincipal">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="25">
+            <Label 
+                Text="TAREA 1 SEMANA 1"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Blue"/>
+            <Label 
+                Text="Ingrese información" />
+            <Entry 
+                x:Name="txtNombre"
+                Placeholder="Nombre"
+                Keyboard="Text" />
+            <Entry 
+                x:Name="txtApellido"
+                Placeholder="Apellido"
+                Keyboard="Text" />
+            <Entry
+                x:Name="txtEdad"
+                Placeholder="Edad"
+                Keyboard="Numeric"
+                MaxLength="3"/>
+            <Entry
+                x:Name="txtSalario"
+                Placeholder="Salario"
+                Keyboard="Numeric" />
+            <Button 
+                x:Name="btnCalcular"
+                Text="Calcular aporte al IESS"
+                Clicked="btnCalcular_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
